@@ -15,8 +15,6 @@ def test_products():
     client = app.test_client()
     response = client.get('/products')
     assert response.status_code == 200
-    assert response.json['name'] == 'Sweatshirt'
-    assert response.json['price'] == '£30.99'
     assert len(response.json) == 3
     assert response.json == [
         {'id': 1, 'name':'Sweatshirt', 'price':'£30.99'},
