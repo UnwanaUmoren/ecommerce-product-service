@@ -8,7 +8,7 @@ def homepage():
     return ("Welcome to Wannie's E-commerce website")
 
 @app.route('/products')
-def pproducts():
+def products():
     return [
         {'id': 1, 'name':'Sweatshirt', 'price':'£30.99'},
         {'id': 2, 'name':'Jeans', 'price':'£49.99'},
