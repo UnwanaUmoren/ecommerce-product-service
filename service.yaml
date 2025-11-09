@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-service
+spec:
+  selector:
+    app: product-service # Tells the service which pods to route traffic to
+  ports:
+    - protocol: TCP
+      port: 80  # service port used by clients to access the microservice
+      targetPort: 5000 # container port
+  type: LoadBalancer

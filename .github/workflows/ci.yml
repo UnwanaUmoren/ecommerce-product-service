@@ -42,6 +42,9 @@ jobs:
         run: |
           docker tag product-service:v1.1 ${{ secrets.DOCKER_USERNAME }}/product-service:v1.1
           docker push ${{ secrets.DOCKER_USERNAME }}/product-service:v1.1
+  
+  
+    
     
 
       
