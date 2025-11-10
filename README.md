@@ -1,6 +1,6 @@
 # E-commerce Product Service
 
-A containerized Flask microservice for product recommendations with CI/CD pipeline and Kubernetes deployment.
+A containerized Flask microservice for product recommendations with CI/CD pipeline, image building and Kubernetes deployment.
 
 ## Features
 - Flask API with `/` and `/products` endpoints
